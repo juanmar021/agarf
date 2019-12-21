@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">AGARF</string>
+
+
+    <string-array name="sexo">
+        <item>MASCULINO</item>
+        <item>FEMENINO</item>
+        <item>INDEFINIDO</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="alimentos">Alimentos</string>
+
+    <string name="ejercicios">Ejercicios</string>
+
+    <string name="Lunes">Lunes</string>
+    <string name="Martes">Martes</string>
+    <string name="Miercoles">Miercoles</string>
+    <string name="Jueves">Jueves</string>
+    <string name="Viernes">Viernes</string>
+    <string name="Sabado">Sabado</string>
+    <string name="Domingo">Domingo</string>
+
+</resources>

@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:orientation="vertical"
+    android:padding="20dp"
+android:background="@color/baground_app"
+tools:context=".activitys.RegistroActivity">
+
+<android.support.v4.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:paddingBottom="40dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:orientation="vertical"
+            android:paddingBottom="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+
+                <android.support.design.widget.TextInputLayout
+                    app:errorEnabled="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/edtIdentificacion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/ic_redondear_edittex"
+                        android:drawableTint="@color/colorPrimary"
+                        android:fontFamily="serif-monospace"
+                        android:hint="Identificación"
+                        android:inputType="number"
+                        android:padding="@dimen/padding_editText"
+                        android:paddingTop="12dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    app:errorEnabled="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/edtNombres"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_redondear_edittex"
+                         android:fontFamily="serif-monospace"
+                        android:hint="Nombres"
+                        android:inputType="textCapCharacters"
+                        android:padding="@dimen/padding_editText" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    app:errorEnabled="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7">
+
+                    <EditText
+                        android:id="@+id/edtApellidos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_redondear_edittex"
+                           android:fontFamily="serif-monospace"
+                        android:hint="Apellidos"
+                        android:inputType="textCapCharacters"
+                        android:maxLines="1"
+                        android:padding="@dimen/padding_editText" />
+
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    app:errorEnabled="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7">
+
+                    <EditText
+                        android:id="@+id/edtFechaNacimiento"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_redondear_edittex"
+                        android:inputType="date"
+                        android:padding="@dimen/padding_editText"
+                        android:hint="Fecha de nacimiento"
+                        android:fontFamily="serif-monospace"
+                        android:drawableTint="@color/colorPrimary"
+                        android:drawableLeft="@drawable/ic_date"
+                        android:focusable="false"
+                        android:clickable="true"
+                        android:maxLines="1" />
+
+                </android.support.design.widget.TextInputLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+
+                <android.support.design.widget.TextInputLayout
+                    app:errorEnabled="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="6dp"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/edtEstatura"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_redondear_edittex"
+                        android:clickable="true"
+                        android:drawableTint="@color/colorPrimary"
+                        android:fontFamily="serif-monospace"
+                        android:hint="Estatura en cm"
+                         android:inputType="number"
+                        android:maxLines="1"
+                        android:padding="@dimen/padding_editText" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="9sp"
+                        android:paddingLeft="3sp"
+                        android:paddingRight="3sp"
+                        android:textSize="12sp"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_marginBottom="3sp"
+                        android:text="Sexo"
+                        />
+                    <RelativeLayout
+                        android:id="@+id/lyGiftList"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:layout_marginLeft="5sp"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="3sp"
+                            android:layout_weight="8"
+                            android:orientation="horizontal"
+                            android:background="@drawable/ic_redondear_spiner"
+                            tools:ignore="UselessParent">
+
+                            <Spinner
+                                android:id="@+id/spnSexo"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:entries="@array/sexo"
+                                android:overlapAnchor="false"
+                                android:padding="13sp"
+                                android:fontFamily="serif-monospace"
+
+                                android:spinnerMode="dropdown" />
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                app:errorEnabled="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edtContraseña"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_redondear_edittex"
+                    android:fontFamily="serif-monospace"
+                    android:hint="Contraseña"
+                    android:inputType="textPassword"
+                    android:padding="@dimen/padding_editText" />
+
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="45dp">
+
+            <ProgressBar
+                android:id="@+id/progressRegistroCliente"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:padding="3dp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btnRegistrar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_redondear_boton"
+                android:backgroundTint="@color/colorPrimary"
+                android:fontFamily="serif-monospace"
+                android:text="Registrar"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>
