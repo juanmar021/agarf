@@ -1,4 +1,4 @@
-# agarf
+# AGARF
 Aplicación para la gestión alimenticia y rutinas de ejercicios (Android native Java) 
 consume recursos de una API REST hecha en  Node.js
 
